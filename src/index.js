@@ -70,7 +70,7 @@ const ctaButton = document.querySelector(".cta button");
 
 ctaButton.textContent = siteContent.cta.button;
 
-ctaImg = document.querySelector(".cta img");
+const ctaImg = document.querySelector(".cta img");
 
 ctaImg.src = siteContent.images["cta-img"];
 
@@ -85,3 +85,17 @@ h4[1].textContent = siteContent["main-content"]["about-h4"];
 h4[2].textContent = siteContent["main-content"]["services-h4"];
 h4[3].textContent = siteContent["main-content"]["product-h4"];
 h4[4].textContent = siteContent["main-content"]["vision-h4"];
+
+const p = document.querySelectorAll(".main-content p");
+
+p[0].textContent = siteContent["main-content"]["features-content"];
+p[1].textContent = siteContent["main-content"]["about-content"];
+p[2].textContent = siteContent["main-content"]["services-content"];
+p[3].textContent = siteContent["main-content"]["product-content"];
+p[4].textContent = siteContent["main-content"]["vision-content"];
+
+// footer now
+
+const footer = document.querySelector("footer a");
+footer.textContent = siteContent.footer.copyright;
+footer.classList.add("bold");
