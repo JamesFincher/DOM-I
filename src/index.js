@@ -99,3 +99,12 @@ p[4].textContent = siteContent["main-content"]["vision-content"];
 const footer = document.querySelector("footer a");
 footer.textContent = siteContent.footer.copyright;
 footer.classList.add("bold");
+
+const contactHeading = document.querySelectorAll(".contact h4");
+contactHeading[0].textContent = siteContent["contact"]["contact-h4"];
+
+const contactText = document.querySelectorAll(".contact p");
+
+contactText[0].textContent = siteContent["contact"]["address"];
+contactText[1].textContent = siteContent["contact"]["phone"];
+contactText[2].textContent = siteContent["contact"]["email"];
