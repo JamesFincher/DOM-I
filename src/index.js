@@ -60,3 +60,12 @@ navLinks.forEach(function (link, i) {
 const logoImg = document.querySelector(".logo");
 
 logoImg.src = siteContent.images["logo-img"];
+
+//cta now
+
+const ctaH1 = document.querySelector(".cta h1");
+ctaH1.textContent = siteContent.cta.h1;
+
+const ctaButton = document.querySelector(".cta button");
+
+ctaButton.textContent = siteContent.cta.button;
