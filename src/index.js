@@ -54,3 +54,9 @@ navLinks.forEach(function (link, i) {
 	link.classList.add("italic");
 	link.textContent = siteContent.nav[`nav-item-${i + 1}`];
 });
+
+//logo img now
+
+const logoImg = document.querySelector(".logo");
+
+logoImg.src = siteContent.images["logo-img"];
